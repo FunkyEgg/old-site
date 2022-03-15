@@ -1,0 +1,50 @@
+html {
+    /* Global styles */
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, black, grey, black);
+    background-color: black;
+    color: white;
+
+    margin: 0px;
+
+    /* Link styles */
+    a {
+        color: hotpink;
+
+        transition: color 0.5s ease;
+    }
+    a:hover {
+        color: aquamarine;
+    }
+
+
+    body {
+        div.website {
+            main {
+                section.skills {
+                    text-align: center;
+                    div.about-me-table {
+                        table {
+                            border-color: #9ea3f5;
+                        }
+                    }
+                }
+                section.about-me {
+                    text-align: center;
+                }
+                section.projects {
+                    text-align: center;
+
+                    hr#conBreak {
+                        opacity: 5%;
+                    }
+                }
+                section.contacts {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

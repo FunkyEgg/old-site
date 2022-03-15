@@ -1,0 +1,45 @@
+html {
+  /* Global styles */
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(grey), to(black));
+  background-image: linear-gradient(to bottom, black, grey, black);
+  background-color: black;
+  color: white;
+  margin: 0px;
+  /* Link styles */
+}
+
+html a {
+  color: hotpink;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+html a:hover {
+  color: aquamarine;
+}
+
+html body div.website main section.skills {
+  text-align: center;
+}
+
+html body div.website main section.skills div.about-me-table table {
+  border-color: #9ea3f5;
+}
+
+html body div.website main section.about-me {
+  text-align: center;
+}
+
+html body div.website main section.projects {
+  text-align: center;
+}
+
+html body div.website main section.projects hr#conBreak {
+  opacity: 5%;
+}
+
+html body div.website main section.contacts {
+  text-align: center;
+}
