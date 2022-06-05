@@ -1,13 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter");
 html {
-  /* Global styles */
-  height: 100%;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(grey), to(black));
-  background-image: linear-gradient(to bottom, black, grey, black);
-  background-color: black;
-  color: white;
-  margin: 0px;
-  /* Link styles */
+  width: 100vw;
+  height: 100vh;
 }
 
 html a {
@@ -20,26 +14,68 @@ html a:hover {
   color: aquamarine;
 }
 
-html body div.website main section.skills {
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+body {
+  background-image: url("/images/background.svg");
+  background-size: cover;
+  font-family: "Inter";
+}
+
+body #title {
   text-align: center;
 }
 
-html body div.website main section.skills div.about-me-table table {
-  border-color: #9ea3f5;
+body .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-html body div.website main section.about-me {
+body .info .skills {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
 }
 
-html body div.website main section.projects {
+body .info .skills #skill-title {
+  margin-bottom: 7px;
+}
+
+body .info .skills #skill-text {
+  margin: 0px;
+  padding-left: 7px;
+}
+
+body .info .about-me {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
 }
 
-html body div.website main section.projects hr#conBreak {
-  opacity: 5%;
+body .info .about-me #abt-me-title {
+  margin-bottom: 7px;
 }
 
-html body div.website main section.contacts {
-  text-align: center;
+body .info .about-me #abt-me-txt {
+  width: 50%;
+  margin: 0px auto;
 }

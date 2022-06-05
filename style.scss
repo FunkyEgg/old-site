@@ -1,15 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+
 html {
-    /* Global styles */
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 
-    background-image: linear-gradient(to bottom, black, grey, black);
-    background-color: black;
-    color: white;
-
-    margin: 0px;
-
-    /* Link styles */
     a {
         color: hotpink;
 
@@ -18,32 +12,57 @@ html {
     a:hover {
         color: aquamarine;
     }
+}
 
+h1 { font-size: 50px; }
+h2 { font-size: 30px; }
+p { font-size: 20px; }
 
-    body {
-        div.website {
-            main {
-                section.skills {
-                    text-align: center;
-                    div.about-me-table {
-                        table {
-                            border-color: #9ea3f5;
-                        }
-                    }
-                }
-                section.about-me {
-                    text-align: center;
-                }
-                section.projects {
-                    text-align: center;
+html, body {
+    padding: 0px;
+    margin: 0px;
 
-                    hr#conBreak {
-                        opacity: 5%;
-                    }
-                }
-                section.contacts {
-                    text-align: center;
-                }
+    color: white;
+}
+
+body {
+    background-image: url("/images/background.svg");
+    background-size: cover;
+
+    font-family: "Inter";
+
+    #title {
+        text-align: center;
+    }
+
+    .info {
+        display: flex;
+
+        .skills {
+            flex: 1;
+            text-align: center;
+
+            #skill-title {
+                margin-bottom: 7px;
+            }
+    
+            #skill-text {
+                margin: 0px;
+                padding-left: 7px;
+            }
+        }
+    
+        .about-me {
+            flex: 1;
+            text-align: center;
+    
+            #abt-me-title {
+                margin-bottom: 7px;
+            }
+
+            #abt-me-txt {
+                width: 50%;
+                margin: 0px auto;
             }
         }
     }
